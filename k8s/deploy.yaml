@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-        - name: wasmedge
+        - name: angular
           image: ghcr.io/madhukamesh/wasmedge:v1
           ports:
             - containerPort: 4200
