@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: new-argocd-demo    # Name of your application in ArgoCD
+  name: new-wasmedge-demo    # Name of your application in ArgoCD
   namespace: argocd  # Namespace where ArgoCD is installed (default is 'argocd')
 spec:
   project: default  # ArgoCD project, 'default' is commonly used
   source:
-    repoURL: https://github.com/madhukamesh/argocd-app-gitops.git # Git repository URL
+    repoURL: https://github.com/madhukamesh/wasmedge_gitops.git # Git repository URL
     targetRevision: HEAD  # Branch or tag, e.g., 'main', 'master', 'v1.0'
     path: k8s  # Path to the Kubernetes manifests inside the Git repo
   destination:
